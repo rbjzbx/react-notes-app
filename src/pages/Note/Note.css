@@ -1,0 +1,146 @@
+.welcome-container {
+    margin-bottom: 20px;
+  }
+  
+  .welcome-title {
+    margin-bottom: 4px;
+  }
+  
+  .welcome-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .welcome-date {
+    line-height: 1.5;
+  }
+  
+  .welcome-stats {
+    line-height: 1.5;
+  }
+  
+  .note-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .content-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .content-card {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .directory-card {
+    width: 250px;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    align-self: flex-start;
+  }
+  
+  .directory-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .directory-item {
+    padding: 6px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+  }
+  
+  .directory-item:hover {
+    color: #1890ff;
+  }
+  
+  .directory-item.active {
+    color: #1890ff;
+    border-left: 3px solid #1890ff;
+    font-weight: 500;
+  }
+  
+  .directory-item.level-1 {
+    padding-left: 0;
+    font-size: 16px;
+  }
+  
+  .directory-item.level-2 {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+  
+  .directory-item.level-3 {
+    padding-left: 32px;
+    font-size: 13px;
+  }
+  
+  .heading-anchor {
+    scroll-margin-top: 80px;
+    position: relative;
+    padding-top: 10px;
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+    
+    .directory-card {
+      width: 100%;
+      position: static;
+      order: -1;
+      margin-bottom: 20px;
+    }
+  }
+  /* Note.css */
+.markdown-navigation {
+  font-size: 14px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.markdown-navigation .title-anchor {
+  color: #666;
+  padding: 4px 0;
+  display: block;
+  transition: all 0.2s;
+}
+
+.markdown-navigation .title-anchor:hover,
+.markdown-navigation .title-anchor.active {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.markdown-navigation .title-level1 {
+  padding-left: 0;
+  font-weight: 500;
+}
+
+.markdown-navigation .title-level2 {
+  padding-left: 16px;
+}
+
+.markdown-navigation .title-level3 {
+  padding-left: 32px;
+}
+
+.directory-card {
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}

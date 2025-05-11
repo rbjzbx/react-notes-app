@@ -1,0 +1,133 @@
+.stellar-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: white; /* 全局字体颜色改为白色 */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
+
+/* 左右布局容器 */
+.footer-content {
+  display: flex;
+  gap: 40px;
+}
+
+/* 左侧格言部分 */
+.footer-quote {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-quote h2 {
+  font-size: 24px;
+  color: white; /* 标题改为白色 */
+  margin-bottom: 15px;
+}
+
+.quote-content {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.85); /* 内容文字使用稍淡的白色 */
+}
+
+.stellar-button {
+  background: #1890ff;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.stellar-button:hover {
+  background: #40a9ff;
+}
+
+/* 右侧猜你想看部分 */
+.footer-recommend {
+  flex: 1;
+}
+
+.footer-recommend h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white; /* 标题改为白色 */
+  text-align: left;
+}
+
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.recommend-item {
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: left;
+  color: white; /* 文字改为白色 */
+}
+
+.recommend-item:hover {
+  color: white;
+}
+
+/* 分隔线和页脚信息 */
+.footer-divider {
+  margin: 30px 0;
+  background-color: rgba(255, 255, 255, 0.2); /* 分隔线改为浅色 */
+}
+
+.footer-meta {
+  margin-top: 30px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7); /* 页脚信息使用稍淡的白色 */
+  text-align: center;
+}
+
+.footer-meta div {
+  margin-bottom: 8px;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.runtime {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.traveler-info {
+  color: rgba(255, 255, 255, 0.7);
+}
+.recommend-grid {
+  list-style: none; /* 移除列表项前的圆点 */
+  padding: 0; /* 移除内边距 */
+  margin: 0; /* 移除外边距 */
+}
+
+.recommend-item {
+  margin-bottom: 10px; /* 列表项之间的外边距 */
+}
+
+.recommend-link {
+  text-decoration: none; /* 移除下划线 */
+  font-size: 16px; /* 字体大小 */
+}
+
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .recommend-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

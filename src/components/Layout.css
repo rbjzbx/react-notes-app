@@ -1,0 +1,22 @@
+/* Layout.css */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 确保容器至少占满整个视口高度 */
+  }
+  
+  .layout-content {
+    flex: 1; /* 主要内容区域会占据剩余空间 */
+    padding: 20px;
+  }
+  
+  /* Footer.css 补充 */
+  .footer {
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* 确保footer始终在底部 */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

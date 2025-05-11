@@ -1,0 +1,49 @@
+/* 透明导航栏样式 */
+.ant-layout-header {
+    background: transparent !important;
+  }
+  
+  /* 菜单项样式 */
+  .ant-menu-dark.ant-menu-horizontal {
+    border-bottom: none;
+  }
+  
+  .ant-menu-dark .ant-menu-item,
+  .ant-menu-dark .ant-menu-item-selected,
+  .ant-menu-dark .ant-menu-item:hover {
+    background: transparent !important;
+  }
+  
+  .ant-menu-dark .ant-menu-item-selected > span {
+    color: #fff !important;
+    font-weight: 500;
+  }
+  
+  .ant-menu-dark .ant-menu-item:hover > span {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  /* 使菜单项居中 */
+  .ant-menu-horizontal {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ant-menu-horizontal > .ant-menu-item {
+    margin: 0 12px;
+  }
+  /* Navbar.css */
+.transparent-button {
+  color: #fff !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.transparent-button:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.transparent-button:focus {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
