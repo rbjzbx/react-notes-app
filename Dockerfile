@@ -1,5 +1,5 @@
 # 使用 Node.js 最新版作为构建环境
-FROM node:latest AS builder
+FROM node:20 AS builder
 
 # 设置工作目录
 WORKDIR /app
